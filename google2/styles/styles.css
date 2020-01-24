@@ -56,10 +56,14 @@ a:hover{
 	justify-content: space-between;
 }
 .main{
-	height: 515px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	height: 630px;
+	padding-top: 115px;
+}
+form{
+	margin-top: 27px;
 }
 .search-box{
 	display: flex;
@@ -92,6 +96,14 @@ a:hover{
 input[type="submit"]{
 	width: 125px;
 	height: 33px;
+	margin-top: 11px;
+    margin-right: 4px;
+    margin-bottom: 11px;
+    margin-left: 4px;
+    padding-top:0px;
+    padding-right: 16px;
+    padding-bottom: 0px;
+    padding-left: 16px;
 	border: none;
 	border-radius: 5px;
 	color: #5f6368;
@@ -102,19 +114,44 @@ input[type="submit"]:hover{
 	border: 1px solid #5f6368;
 	color: rgba(0,0,0,0.87);
 }
-.p{
-	text-decoration: none;
-	color: rgba(0,0,0,0.87);
+.input-box{
+	display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+footer{
+	width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.langu{
+	padding-top: 20px;
+	display: flex;
+}
+.langu a {
+padding: 0 3px;
+color: #1a0dab;
 }
 .container{ 
 	display: flex;
 	flex-direction: column;
 	background-color: #f2f2f2;
 	line-height: 40px;
-	border-top: : 2px solid #5f6368;
+	border-top: : 1px solid #e4e4e4;
 }
-.p{
+.ua{
+	padding-left: 27px;
+
 }
 .left{
-	border-top: 1px solid #e4e4e4;
+	padding-left: 27px;
+}
+
+.right{
+	padding-right: 27px; 
+}
+.top-line{
+	border-top:1px solid #e4e4e4;
 }
