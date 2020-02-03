@@ -55,6 +55,7 @@ button{
 	background-color: #f04737;
 	border: none;
 	border-radius: 7px;
+	cursor: pointer;
 }
 .text1 p:nth-child(2n){
 	font-size: 18px;
@@ -78,6 +79,9 @@ footer{
 }
 .info p{
 	padding:  10px 0;
+}
+.social img{
+	cursor: pointer;
 }
 .info p:nth-child(1){
 	font-weight: bold;
