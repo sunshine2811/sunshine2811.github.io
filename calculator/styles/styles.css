@@ -1,0 +1,94 @@
+:root{
+	--brand-color: #5f9b9c;
+	--border: 4px solid #5f9b9c;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.wrap{
+	margin: 0 auto;
+	width: 410px;
+	height: 640px;
+	border: var(--border);
+	border-radius: 10px;	
+}
+.logo{
+	width: 100%;
+	height: 55px;
+	margin-top: 20px;
+	background-color: var(--brand-color);
+}
+.logo span{
+	padding-top: 16px;
+	padding-right: 19px;
+	text-align: right;
+	display: block;
+	font-size: 24px;
+	color: white;
+}
+.input_line{ 
+    width: 360px;
+    height: 55px;
+    border-radius: 10px;
+    border: var(--border);
+    margin-top: 18px;
+    outline: none;
+    position: relative;
+    left: 20px;
+	font-size: 43px;
+	color: var(--brand-color);
+}
+.batery-block{
+	position: relative;
+	top: 20px;
+	left: 245px;
+	width: 133px;
+	height: 47px;
+	background-color: var(--brand-color);
+}
+.keyboard{
+	padding-top: 30px;
+	height: 400px;
+}
+.row{
+	position: relative;
+	top: 0;
+  	left: 0;
+  	right: 0;
+  	bottom: 0;
+  	margin: 0 auto;
+	margin-top: 25px;
+	width: 94%;
+	height: 70px;
+}
+.btn{
+	position: absolute;
+	height: 73px;
+  	width: 73px;
+  	border: var(--border);
+  	border-radius:10px;
+  	text-align: center;
+  	line-height:73px;
+  	color: var(--brand-color);
+  	font-size:20px;
+  	font-weight: 700;
+  	cursor: pointer;
+}
+.btn:nth-child(1){
+  left: 7px;  
+}
+.btn:nth-child(2){
+  left: 103px; 
+}
+.btn:nth-child(3){
+  left: 203px;
+}
+.btn:nth-child(4){
+  right: 7px;
+}
+.btn:hover{
+  transform: scale(1.1);
+  transition: all 0.1s  ease;
+}
