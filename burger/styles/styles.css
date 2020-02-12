@@ -1,0 +1,113 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.wrap{
+	margin: 0 auto;
+	padding-left: 50px;
+	padding-top: 30px;
+	width: 1055px;
+	min-height: 580px;
+background: #0a0a0a; /* Old browsers */
+background: -moz-linear-gradient(top,  #0a0a0a 1%, #262626 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #0a0a0a 1%,#262626 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #0a0a0a 1%,#262626 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a0a0a', endColorstr='#262626',GradientType=0 ); /* IE6-9 */
+}
+.menu-item{
+	width: 900px;
+	min-height: 420px;
+	background: white;
+	position: relative;
+	display: flex;
+}
+.photo-item{
+	width: 340px;
+	height: 420px;
+}
+.discount{
+	width: 340px;
+	height: 215px;
+	background: black;
+	position: absolute;
+	bottom: 20px;
+	left: -20px;
+}
+.italian{
+	padding-top: 15px;
+	padding-left:25px; 
+	padding-right: 25px;
+	font-weight: bold;
+	font-size: 60px;
+	text-align: center;
+	color:white;
+}
+.italian_price{
+	padding-top: 20px;
+	color: white;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+.italian_price span{
+	color: #f2d218;
+}
+.list-item{
+	width: 100%;
+	padding: 0 100px;
+	text-align: center;
+}
+.list-item p{
+	padding-top: 30px;
+	font-size: 18px;
+	text-align: center;
+}
+.row{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0;
+}
+.list-burger{
+	position: relative;
+	width: 150px;
+	height: 85px;
+	padding-top: 25px;
+	border-bottom: 1px solid #a6a6a6;
+}
+.list-burger span{
+	display: block;
+	font-size: 18px;
+	line-height: 24px;
+}
+.price{
+	color: #a6a6a6;
+}
+.border_block{
+	width: 8px;
+	height: 8px;
+	background: #a6a6a6;
+	position: absolute;
+	bottom: -5px;
+	left: 70px;
+	transform: rotate(45deg);
+}
+.btn_menu{
+	width: 180px;
+	height: 55px;
+	background: black;
+	text-align: center;
+	padding-top: 15px;
+	position: relative;
+	bottom: -15px;
+	left: 720px;
+}
+.btn_menu a{
+	color: white;
+	font-size: 25px;
+	text-decoration: none;
+	font-weight: bold;
+}
+.btn_menu:hover{
+	cursor: pointer;
+}
