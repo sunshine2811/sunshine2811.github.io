@@ -1,0 +1,84 @@
+:root{
+	--brand-color:#023875;
+	--border: 24px solid #023875;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: arial, sans-serif;
+}
+.wrap{
+	position: relative;
+	border-top: var(--border);
+	border-bottom: var(--border);
+	padding: 0 10px;
+}
+.logo{
+	position: relative;
+}
+.logo h1{
+	font-size: 34px;
+	color: var(--brand-color);
+}
+.work-info a{
+	text-decoration: none;
+	font-size:20px;
+	color: var(--brand-color);
+}
+.style{
+	padding: 5px 0;
+	font-size: 20px;
+	color: var(--brand-color);
+}
+.font-style{
+	display: block;
+	color: #343434;
+}
+.image-logo{
+	width: 110px;
+	height: 80px;
+	background-image: url(../img/ship.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	left: 220px;
+	top: 10px;
+}
+.image-main{
+	width: 100%;
+	min-height: 180px;
+	background-image: url(../img/town.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.info{
+	padding-top: 5px;
+}
+.koleso{
+	padding-top: 5px;
+	height: 30px;
+	width: 340px;
+	font-size: 18px;
+	color: #fff;
+	background: var(--brand-color);
+	text-align: center;
+}
+.info ul{
+	padding: 5px 0;
+	text-transform: uppercase;
+	padding-left: 15px;
+	list-style-type: none;
+}
+.info li{
+	padding: 8px 0;
+}
+footer{
+	font-size: 13px;
+	color: #fff;
+	position: absolute;
+	bottom: -18px;
+}
