@@ -1,6 +1,6 @@
 :root{
 	--brand-color:#023875;
-	--border: 24px solid #023875;
+	--border: 34px solid #023875;
 }
 *{
 	margin: 0;
@@ -10,11 +10,23 @@
 body{
 	font-family: arial, sans-serif;
 }
+img{
+	display: block;
+	width: 100%;
+}
+header{
+	padding-bottom: 10px;
+}
 .wrap{
 	position: relative;
 	border-top: var(--border);
 	border-bottom: var(--border);
 	padding: 0 10px;
+}
+.content{
+	max-width: 960px;
+	text-align: center;
+    margin: 0 auto;
 }
 .logo{
 	position: relative;
@@ -38,14 +50,10 @@ body{
 	color: #343434;
 }
 .image-logo{
-	width: 110px;
-	height: 80px;
-	background-image: url(../img/ship.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	position: absolute;
-	left: 220px;
-	top: 10px;
+	width: 170px;
+	padding-top: 20px;
+    padding-bottom: 40px;
+    margin: 0 auto;
 }
 .image-main{
 	width: 100%;
@@ -56,12 +64,13 @@ body{
 	background-position: center;
 }
 .info{
-	padding-top: 5px;
+	padding-top: 10px;
+	width: 100%;
 }
 .koleso{
 	padding-top: 5px;
 	height: 30px;
-	width: 340px;
+	width: 100%;
 	font-size: 18px;
 	color: #fff;
 	background: var(--brand-color);
@@ -73,12 +82,67 @@ body{
 	padding-left: 15px;
 	list-style-type: none;
 }
+.info li a:hover{
+	color: #fff;
+}
 .info li{
 	padding: 8px 0;
+}
+.info li:hover{
+	cursor: pointer;
+	background: var(--brand-color);
+}
+.info li a:hover{
+	color:#fff;
 }
 footer{
 	font-size: 13px;
 	color: #fff;
 	position: absolute;
-	bottom: -18px;
+	bottom: -22px;
 }
+@media screen and (min-width: 856px) {
+	.logo{
+		display: flex;
+		text-align: justify;
+	}
+}
+@media screen and (min-width: 856px) {
+	.logo-text{
+		padding: 15px 5px;
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+	}	
+}
+
+@media screen and (min-width: 856px) {
+	.image-logo{
+		margin-left: 0px;
+	}
+
+}
+@media screen and (min-width: 856px) {
+	.work-info{
+		padding: 15px 5px;
+		text-align: right;	
+	}	
+}
+@media screen and (min-width: 856px) {
+	.main{
+		display: flex;
+		flex-direction:row-reverse;
+	}
+}
+@media screen and (min-width: 856px) {
+	.main-text{
+		text-align: left;
+		width: 190%;
+		padding:10px 5px;
+	}
+}
+@media screen and (min-width: 856px) {
+	.info ul{
+		padding-top: 10px;
+		text-align: left;
+	}
