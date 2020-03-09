@@ -1,0 +1,125 @@
+
+.navbar{ 
+	background:#800080;
+}
+.nav-link .navbar-brand{
+	color: #f4f4f4; 
+	cursor: pointer;
+}
+.nav-link{ 
+	margin-right: 1em !important;
+}
+.nav-link:hover{ 
+	background: #f4f4f4; 
+	color: #f97300; 
+}
+.navbar-collapse{ 
+	justify-content: flex-end;
+}
+.navbar-toggler{  
+	background:#fff !important;
+}
+.header{
+ background-image: url('../img/main.png');
+ background-attachment: fixed;
+ background-size: cover;
+ background-position: center;
+}
+.overlay{
+ position: absolute;
+ min-height: 100%;
+ min-width: 100%;
+ left: 0;
+ top: 0;
+ background: rgba(244, 244, 244, 0.79);
+}
+.description{
+	position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 2em;
+}
+.description h1{
+ color:#800080 ;
+}
+.description p{
+ color:#666;
+ font-size: 20px;
+ width: 50%;
+ line-height: 1.5;
+}
+.description button{
+ border:1px  solid #800080;
+ background:#800080;
+ color:#fff;
+}
+.about{
+ margin: 4em 0;
+ padding: 1em;
+ position: relative;
+}
+.about h1{
+ color:#F97300;
+ margin: 2em;
+}
+.about img{
+ height: 100%;
+ width: 100%;
+ border-radius: 50%
+}
+.about span{
+ display: block;
+ color: #888;
+ position: absolute;
+ left: 115px;
+}
+.about .desc{
+ padding: 2em;
+ border-left:4px solid #10828C;
+}
+.about .desc h3{
+ color: #10828C;
+}
+.about .desc p{
+ line-height:2;
+ color:#888;
+}
+.portfolio{
+ margin: 4em 0;
+ position: relative; 
+ text-align: center;
+}
+.portfolio h1{
+ color:#800080;
+ margin: 2em; 
+}
+.portfolio img{
+  height: 15rem;
+  width: 100%;
+  margin: 1em;
+}
+.portfolio a{
+	font-size:22px;
+	color: #800080;
+	text-decoration: none; 
+}
+.contact-form{
+ margin: 6em 0;
+ position: relative;  
+}
+.contact-form h1{
+ padding:2em 1px;
+ color: #800080; 
+}
+.contact-form .right{
+ max-width: 600px;
+}
+.contact-form .right .btn-secondary{
+ background:  #800080;
+ color: #fff;
+ border:0;
+}
+.contact-form .right .form-control::placeholder{
+ color: #888;
+ font-size: 16px;
+}
