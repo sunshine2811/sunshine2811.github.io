@@ -152,7 +152,36 @@
   </form>
  </div>
 </div>
+	<div class="showModal" id="Python">зареєструватись</div>
+		
+		<div class="modal-my" id="modal">
+			<form class="modal-dialog-my" id="applyForm" data-course="FrontEnd">
+				<a class="close-my" id="closeModal">&#10006;</a>
+
+				<div class="title-my">Записатись</div>
+				<div class="subtitle-my">Залиште Ваші дані і ми зателефонуємо</div>
+
+				<input type="text" class="form-control-my" name="name" id="name" placeholder="Enter Your name:" required>
+
+				<input type="tel" class="form-control-my" name="phone" id="phone" placeholder="Enter Your phonenumber:" required>
+
+				<input type="email" class="form-control-my" name="email" id="email" placeholder="Enter Your email:" required>
+				
+				<button type="submit">Submit</button>
+			</form>
+
+		</div>
+
+		<div class="modal-my" id="thanks">
+            <div class="modal-dialog-my">
+                <a class="close-my" id="closeThanks">&#10006;</a>
+                <div class="title-my">Дякуємо за реєстрацію</div>
+                <div class="message-my">Ми Вам зателефонуємо</div>
+            </div>
+        </div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="js/jquery.mask.js"></script>
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 	</body>
 	</html>
