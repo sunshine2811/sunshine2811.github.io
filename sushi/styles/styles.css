@@ -1,0 +1,604 @@
+:root{
+	--brand-color:#d4d4d4;
+	--back-color:#cb6502;
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: Raleway, sans-serif;
+	overflow-x: hidden;
+}
+.wrap{
+	background-color: var(--back-color);
+}
+img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+.header{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row-reverse;
+	position: relative;
+	padding: 0 15px;
+}
+.logo{
+	width: 55px;
+}
+.burger{
+	width: 50px;
+	height: 50px;
+	background-color: var(--brand-color);
+	border-radius: 50%;
+	position: relative;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.burger:hover{
+	transform: scale(1.1);
+ 	transition: all 0.1s  ease;
+}
+.burger_line,
+.burger_line::after,
+.burger_line::before{
+	position: absolute;
+	display: block;
+	width: 25px;
+	height: 4px;
+	background-color: var(--back-color);
+	transition: 0.5s;
+}
+.burger_line{
+	top: 50%;
+	left: 25%;
+}
+.burger_line::after{
+	content: "";
+	top: -8px;
+}
+.burger_line::before{
+	content: "";
+	top: 8px;
+}
+.burger_line.burger_line_active{
+	background: transparent;
+}
+.burger_line.burger_line_active::after{
+	top: 0;
+	transform: rotate(45deg);
+}
+.burger_line.burger_line_active::before{
+	top: 0;
+	transform: rotate(-45deg);
+}
+.hide{
+	display: none;
+}
+.nav{
+	position: absolute;
+	background-color: var(--brand-color);
+	top: 80px;
+	right: 15px;
+}
+.menu{
+	list-style-type: none;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.menu li{
+	display: block;
+	padding: 10px;
+	border-bottom: 1px solid var(--back-color);
+}
+.menu li:hover{
+	cursor: pointer;
+}
+.menu li a{
+	text-decoration: none;
+	color: #000000;
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: bold;
+}
+.header-info{
+	display: none;
+}
+.button{
+	display: block;
+	text-decoration: none;
+    font-weight: bolder;
+    text-align: center;
+}
+.sushiback{
+	display: none;
+}
+.about{
+	padding: 15px 15px;
+}
+.about-backgr{
+	background-color: var(--brand-color);
+	margin-top: 10px;
+	border-radius: 25px;
+	padding-bottom: 8px;
+}
+.about-backgr p{
+	padding: 10px;
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.7);
+}
+.about-backgr a{
+	background-color: var(--back-color);
+	color: var(--brand-color);
+	width: 120px;
+	height: 30px;
+	font-size: 14px;
+	border-radius: 18px;
+	line-height: 28px;
+	margin: 0 auto;
+}
+.about-icon{
+	width: 50px;
+	margin: 0 auto;
+	padding-top: 5px;
+}
+.coffe{
+	display: none;
+}
+.price{
+	display: flex;
+	flex-direction: column;
+}
+.price_list{
+	text-align: center;
+	padding: 10px 0;
+}
+.price_list h2{
+	color: var(--brand-color);
+	font-size: 20px;
+	text-transform: uppercase;
+}
+.price-item {
+	list-style-type: none;
+}
+.price-item li {
+	padding: 5px 0;
+}
+.price-item li a{
+	text-decoration: none;
+	color: var(--brand-color);
+}
+.photo_block{
+	display: flex;
+	flex-direction: column;
+}
+.photo_item{
+	width: 260px;
+	margin: 0 auto;
+}
+.photo_item p{
+	color: var(--brand-color);
+	padding: 5px;
+}
+.baked_role{
+	display: none;
+}
+.happy_sushi{
+	display: none;
+}
+.about_items{
+	display: none;
+}
+.web-item{
+	padding: 20px 0;
+	text-align: center;
+}
+.site-link{
+	display: block;
+	color: var(--brand-color);
+	text-decoration: none;
+	font-size: 20px;
+}
+.social li{
+	padding-top: 20px;
+}
+.social ul li a {
+	display: block;
+	margin: 0 auto;
+	color: var(--back-color);
+	width: 50px;
+	height: 50px;
+	background-color: var(--brand-color);
+	border-radius: 50%;
+	font-size: 25px;
+	line-height: 50px;
+}
+@media screen and (min-width: 584px){
+	.header{
+		padding-left: 15px;
+		flex-direction: row;
+	}
+	.logo{
+		width: 85px;
+		position: relative;
+		z-index: 2;
+	}
+	.burger{
+		display: none;
+	}
+	.hide{
+		display: block;
+	}
+	.nav{
+		top: 35px;
+		right: 35px;
+		width: 100%;
+		padding-right: 10px;
+		z-index: 1;
+	}
+	.menu{
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+	.menu li{
+		padding: 5px 15px;
+		border-bottom: none;
+	}
+	.menu li a{
+		font-size: 16px;
+		font-weight: normal;
+	}
+	.header-info{
+		display: block;
+		padding-left: 15px;
+		padding-right: 180px;
+		color: var(--brand-color);
+		text-align: right;
+	}
+	.header-info h1{
+		font-size: 50px;
+		text-transform: uppercase;
+		letter-spacing: 7px;
+	}
+	.header-info h2{
+		font-size: 25px;
+		text-transform: uppercase;
+		letter-spacing: 10px;
+	}
+	.header-info span{
+		display: block;
+		font-size: 12px;
+	}
+	.header-info p{
+		font-size: 14px;
+		padding-left: 20px;
+		padding-bottom: 10px;
+	}
+	.sushiback{
+		display: block;
+		width: 250px;
+		border-radius: 50%;
+		border: 4px solid var(--brand-color);
+		position: absolute;
+		right: -95px;
+		top: 12%;
+	}
+	.header-info a{
+	    color: var(--back-color);
+		background: var(--brand-color);
+		width: 170px;
+		height: 30px;
+		border-radius: 35px;
+		line-height: 34px;
+		margin-left: auto;
+	}
+	.about{
+		display: flex;
+		justify-content: space-around;
+		padding: 50px 20px;
+	}
+	.about-backgr{
+		width: 225px;
+		border-radius: 50% 50% 50% 50% / 25% 25% 25% 25%;
+		padding: 35px 30px; 
+	}
+	.about-backgr a{
+		width: 160px;
+	}
+	.about-backgr p{
+		font-size: 16px;
+		padding: 15px 0;
+	}
+	.about-icon{
+		width: 60px;
+	}
+	.coffe{
+		display: flex;
+		padding: 70px 50px;
+		align-items: center;
+	}
+	.coffe p{
+		font-size: 16px;
+		color: var(--brand-color);
+		padding-left: 20px;
+	}
+	.coffe img{
+		width: 150px;
+		flex-shrink: 0;
+	}
+	.price{
+		flex-direction: row;
+		padding: 70px 20px 20px;
+		justify-content: space-around;
+	}
+	.price-item li {
+    	font-size: 15px;
+    	padding: 5px 0;
+	}
+	.photo{
+		padding: 20px;
+	}
+	.photo_item{
+		width: 240px;
+	}
+	.photo_item p{
+		padding: 15px 5px;
+	}
+	.photo_block{
+		flex-direction: row;
+	}
+	.baked_role{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 40px 0; 
+	}
+	.baked_role_photo{
+		width: 200px;
+	}
+	.baked_role_item{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 120px;
+		height: 120px;
+	}
+	.row{
+		display: flex;
+		justify-content: space-between;
+	}
+	.item{
+		width: 7px;
+		height: 7px;
+		border-radius: 50%;
+		background-color: var(--brand-color);
+	}
+	.happy_sushi{
+		display: flex;
+	}
+	.happy_sushi_item{
+		color: var(--brand-color);
+		padding: 25px 25px;
+	}
+	.happy_sushi img{
+		margin-right: -40px;
+		width: 240px;
+		flex-shrink: 0;
+	}
+	.about_items{
+		display: flex;
+		padding: 50px 100px;
+		color: var(--brand-color);
+		justify-content: space-around;
+	}
+	.about_items h3{
+		text-transform: uppercase;
+		font-weight: normal;
+		padding-bottom: 10px;
+	}
+	.about_item_text p{
+		max-width: 120px;
+	}
+	.about_item_list  ul{
+		list-style-type: none;
+	}
+	.about_item_list li{
+		padding-bottom: 5px;
+	}
+	.about_item_list li a{
+		color: var(--brand-color);
+		text-decoration: none;
+	}
+	.web-item{
+	padding: 25px 0;
+	text-align: center;
+	}
+	.site-link{
+	font-size: 28px;
+	}
+	.social li{
+	display: inline-block;	
+	padding-top: 30px;
+	padding-right: 10px;
+	}
+}
+@media screen and (min-width: 992px) {
+	.header{
+		padding-left: 45px;
+	}
+	.logo{
+		width: 180px;
+	}
+	.nav{
+	    top: 80px;
+		right: 100px;
+		padding-right: 30px;
+	}
+	.menu li{
+		padding: 10px 25px;
+	}
+	.menu li a{
+		font-size: 24px;
+	}
+	.header-info{
+		padding-left: 45px;
+		padding-right: 400px;
+	}
+	.header-info h1{
+		font-size: 70px;
+		letter-spacing: 10px;
+	}
+	.header-info h2{
+		font-size: 45px;		
+	}
+	.header-info span{
+		font-size: 16px;
+		padding-right: 10px;
+	}
+	.header-info p{
+		font-size: 24px;
+		padding-left: 65px;
+	}
+	.sushiback{
+		width: 450px;
+		border-radius: 50%;
+		border: 5px solid var(--brand-color);
+		right: -165px;
+		top: 26%;
+	}
+	.header-info a{
+		width: 330px;
+		height: 45px;
+		border-radius: 35px;
+		line-height: 45px;
+		font-size: 24px;
+	}
+	.about{
+		padding-top: 150px;
+	}
+	.about-backgr{
+		width: 425px;
+		border-radius: 50% 50% 50% 50% / 25% 25% 25% 25%;
+		padding: 80px 62px; 
+	}
+	.about-backgr a{
+		font-size: 20px;
+		height: 40px;
+		line-height: 40px;
+	}
+	.about-backgr p{
+		font-size: 24px;
+		padding: 30px 0;
+	}
+	.about-backgr a{
+		width: 300px;
+	}
+	.about-icon{
+		width: 140px;
+	}
+	.coffe{
+		padding: 120px 100px 120px 150px;
+	}
+	.coffe p{
+		font-size: 24px;
+		padding-left: 20px;
+	}
+	.coffe img{
+		width: 300px;
+	}
+	.price {
+		background-image: url(../img/shape2.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+    	padding: 300px 60px 100px;
+	}
+	.price_list h2 {
+    	font-size: 35px;
+	}
+	.price-item li{
+    	font-size: 25px;
+    	padding-top: 20px;
+	}
+	.photo{
+		padding: 70px 60px; 
+	}
+	.photo_item {
+    	width: 420px;
+	}
+	.photo_item p{
+		font-size: 25px;
+		padding: 40px 20px;
+	}
+	.baked_role{
+		padding: 80px 0;	
+	}
+	.baked_role_photo{
+		width: 430px;
+	}
+	.baked_role_item{
+		width: 200px;
+		height: 200px;
+	}
+	.item{
+		width: 10px;
+		height: 10px;
+	}
+	.happy_sushi{
+		padding: 50px 0;
+	}
+	.happy_sushi_item{
+		padding: 80px 20px 60px 100px;
+	}
+	.happy_sushi_item h1{
+		font-size: 65px;
+	}
+	.happy_sushi_item h2{
+		font-size: 50px;
+		padding: 30px 0;
+	}
+	.happy_sushi_item p{
+		font-size: 24px;
+	}
+	.happy_sushi img{
+		margin-right: -100px;
+		width: 540px;
+	}
+	.about_items{
+		padding: 50px 100px;
+	}
+	.about_items h3{
+		font-size: 38px;
+		padding-bottom: 30px;
+	}
+	.about_item_text p{
+		font-size: 26px;
+		max-width: 180px;
+	}
+	.about_item_list li{
+		padding-bottom: 5px;
+		font-size: 26px;
+	}
+	.web-item {
+    	padding-top: 50px;
+    	padding-bottom: 100px;
+    	text-align: center;
+	}
+	.site-link{
+		font-size: 42px;
+	}
+	.social li{
+		display: inline-block;	
+		padding-top: 40px;
+		padding-right: 10px;
+	}
+	.social ul li a {
+    	width: 60px;
+    	height: 60px;
+    	font-size: 35px;
+    	line-height: 60px;
+	}
+}
