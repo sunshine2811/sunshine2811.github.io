@@ -7,3 +7,4 @@ burger.addEventListener("click", function(){
 document.querySelector(".burger").onclick = function (argument) {
 	document.querySelector(".burger_line").classList.toggle("burger_line_active");
 }
+
